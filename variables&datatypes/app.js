@@ -1,9 +1,9 @@
 // kasutaja sisend
-let nimi = prompt('Sisestage nimi')
-let lubatudKiirus = Number(prompt('Sisestage lubatud kiirus'))
-let tegelikKiirus = Number(prompt('Sisestage tegelik kiirus'))
+let ainepunktid = Number(prompt('Ainepunktide arv'))
+let nadalad = Number(prompt('Sisestage nadalad'))
+
 // arvutus
-let trahv = (tegelikKiirus - lubatudKiirus) * 3
-let tegelikTrahv = Math.min(trahv, 190)
+let tunnid = ainepunktid * 26
+let nadalasToimetan = Math.ceil(tunnid / nadalad)
 // tulemuse väljastamine
-console.log(nimi + ', kiiruse ületamise eest on teie trahv ' + tegelikTrahv + ' eurot')
+console.log(nadalasToimetan)
