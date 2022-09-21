@@ -1,7 +1,9 @@
 // kasutaja sisend
-let astmeAlus = Number(prompt('Sisestage astme alus'))
-let astendaja = Number(prompt('Sisestage astendaja2'))
+let nimi = prompt('Sisestage nimi')
+let lubatudKiirus = Number(prompt('Sisestage lubatud kiirus'))
+let tegelikKiirus = Number(prompt('Sisestage tegelik kiirus'))
 // arvutus
-let tulemus = Math.pow(astmeAlus, astendaja)
+let trahv = (tegelikKiirus - lubatudKiirus) * 3
+let tegelikTrahv = Math.min(trahv, 190)
 // tulemuse väljastamine
-console.log(tulemus)
+console.log(nimi + ', kiiruse ületamise eest on teie trahv ' + tegelikTrahv + ' eurot')
