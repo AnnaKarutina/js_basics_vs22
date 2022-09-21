@@ -1,9 +1,9 @@
 // kasutaja sisend
-let ainepunktid = Number(prompt('Ainepunktide arv'))
-let nadalad = Number(prompt('Sisestage nadalad'))
+let inimesed = 100
+let kohtiBussis = 50
 
 // arvutus
-let tunnid = ainepunktid * 26
-let nadalasToimetan = Math.ceil(tunnid / nadalad)
+let bussidTäidetud = Math.floor(inimesed / kohtiBussis)
+let mahaJaanud = inimesed % kohtiBussis
 // tulemuse väljastamine
-console.log(nadalasToimetan)
+console.log(inimesed + ' inimeste sõidutamiseks läheb vaja ' + bussidTäidetud + ' bussi ja ' + mahaJaanud + ' inimest on jäänud maha')
