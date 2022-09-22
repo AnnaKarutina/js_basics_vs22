@@ -1,16 +1,3 @@
-// kasutaja sisend
-let inimesed = 100
-let kohtiBussis = 50
-
-// arvutus
-let bussidTäidetud = Math.floor(inimesed / kohtiBussis)
-let mahaJaanud = inimesed % kohtiBussis
-// tulemuse väljastamine
-console.log(inimesed + ' inimeste sõidutamiseks läheb vaja ' + bussidTäidetud + ' bussi')
-if(mahaJaanud != 0){
-    console.log('ja ' + mahaJaanud + ' inimest on jäänud maha')
-}
-
 // == != > < >= <= - võrdlusoperaatorid -> true / false
 
 /*
@@ -22,3 +9,12 @@ if(tingimus){
     vastus tingimusele on false
 }
  */
+
+// kasutaja sisend
+let temp = Number(prompt('Sisesta õhutemperatuur'))
+// kontroll ja väljastus
+if(temp > 4.0){
+    console.log('Ei ole jäätumise ohtu')
+} else {
+    console.log('On jäätumise oht')
+}
