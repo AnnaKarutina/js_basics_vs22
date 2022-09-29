@@ -1,14 +1,7 @@
 // kasutaja sisend
-let ringideArv = Number(prompt('Sisesta ringide arv'))
-let porgandidKokku = 0
-let ring = 1
-while(ring <= ringideArv){
-    // console.log(`${ring}. ring`)
-    if(ring % 2 == 0){
-        // console.log(`Saab ${ring} porgandit`)
-        porgandidKokku = porgandidKokku + ring // porgandidKokku += ring
-        // console.log(porgandidKokku)
-    }
-    ring++
+let taringuteArv = Number(prompt('Täringute arv'))
+
+for(let kord = 1; kord <= taringuteArv; kord++){
+    let taring = Math.ceil(Math.random() * 6)
+    console.log(taring)
 }
-console.log(`Porgandite koguarv on ${porgandidKokku}.`)
