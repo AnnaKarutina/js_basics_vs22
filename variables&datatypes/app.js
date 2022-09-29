@@ -1,56 +1,28 @@
-// == != > < >= <= - võrdlusoperaatorid -> true / false
-
-// loogilised operaatorid
-// AND - &&
-// OR - ||
-// NOT - !
+// for
 
 /*
-if(tingimus){
-    tegevused, mis sooritatakse, kui
-    vastus tingimusele on true
-} else {
-    tegevused, mis sooritatakse, kui
-    vastus tingimusele on false
+for (let nimi = algvaartus; tingimus; suurendamine/vahendamine){
+    tegevused, mis sooritatakse korduvalt
 }
- */
 
-/*
-if(tingimus1){
-    kui see kehtib, siis edasi pole vaja kontrollida
-    kui aga mitte, vaadatakse järgmine tinfimus
-} else if(tingimus2){
-    kui see kehtib, siis edasi pole vaja kontrollida
-    kui aga mitte, vaadatakse järgmine tinfimus
-} else {
-    täidetakse siis, kui kõik eelmised ei sobinud
+while(tingimus){
+    tegevused, mis sooritatakse korduvalt
 }
 */
 
-// kasutaja sisend
-let vanus = Number(prompt('Sisesta oma vanus'))
-let sugu = prompt('Sisesta oma sugu')
-let treening = Number(prompt('Sisesta treeningu tüüp'))
-// kontroll ja väljastus
-let pulsisagedus;
-
-if(sugu == 'm' || sugu == 'M'){
-    pulsisagedus = 220 - vanus
-} else if(sugu == 'n' || sugu == 'N'){
-    pulsisagedus = 206 - 0.88 * vanus
+for(let number = 1; number <= 10; number++){
+    if(number == 5){
+        // console.log(number)
+        // break;
+        continue;
+    }
+    console.log(number)
 }
-let minPulsisagedus;
-let maxPulsisagedus;
+console.log('for tsükli töö lõpp')
 
-if(treening == 1){
-    minPulsisagedus = 0.5 * pulsisagedus
-    maxPulsisagedus = 0.7 * pulsisagedus
-} else if(treening == 2){
-    minPulsisagedus = 0.7 * pulsisagedus
-    maxPulsisagedus = 0.8 * pulsisagedus
-} else if(treening == 3) {
-    minPulsisagedus = 0.8 * pulsisagedus
-    maxPulsisagedus = 0.87 * pulsisagedus
+let kord = 1
+while(kord <= 10){
+    console.log(kord)
+    kord++
 }
-
-console.log(`Pulsisagedis peab olema vahemikus ${minPulsisagedus} kuni ${maxPulsisagedus}`)
+console.log('while tsükli lõpp')
